@@ -22,6 +22,13 @@ This is the third Challenge homework assignment and will meet the acceptance cri
 - WHEN the password is generated
 - THEN the password is either displayed in an alert or written to the page
 
+
+
+## Screenshot
+
+![pass-gen](https://user-images.githubusercontent.com/92597876/141696670-8d046e46-bee5-4d46-86b4-16db5d1051b6.JPG)
+
+
 ## Built With
 
 - HTML
