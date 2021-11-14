@@ -1,8 +1,10 @@
 // Assignment code here
-
 function generatePassword() {
+
+  //this log will confirm that the button is functional in the dev tools
   console.log("generate click");
 
+//setting the boolian values to false and numeric to allow future input
   var length = 0
   var isNumeric = false
   var isUpper = false
@@ -10,33 +12,38 @@ function generatePassword() {
   var isSpecial = false
 
   //prompt user for pass criteria
-  //password length 8 < 128
+  //password 8 < length >128. This while loop will circle around untill a valid number is input.
   while (length < 8 || length > 128 || isNaN(length)) {
     length = parseInt(window.prompt('Choose a passsword length between 8-128'))
   }
 
 
-  //validate selections
+  //validate selections. this while loop with circle around until at least one selection is made.
   while (!(isNumeric || isUpper || isLower || isSpecial)) {
-    isNumeric = window.confirm('Inclusde numbers?')
+    isNumeric = window.confirm('Include numbers?')
     isUpper = window.confirm('Include uppercase?')
-    isLower = window.confirm('Inslude lowercase?')
+    isLower = window.confirm('Include lowercase?')
     isSpecial = window.confirm('Include special characters?')
   }
 
-  //character types
+  //character types. setting the string values for all potential characters
   var characterSet = ''
-  if (isNumeric) characterset += char('0123456789')
-  if (isUpper) characterset += ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-  if (isLower) characterset += ("abcdefghijklmnopqrstuvwxyz")
-  if (isSpecial) characterset += (" !@#$%^&*()=+-")
+  if (isNumeric) characterSet += ('0123456789')
+  if (isUpper) characterSet += ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+  if (isLower) characterSet += ("abcdefghijklmnopqrstuvwxyz")
+  if (isSpecial) characterSet += (" !@#$%^&*()=+-")
 
-  var allChar = isNumeric + isUpper + isLower + isSpecial;
 
-  //generate password
+  //generate password using built in math functions applied to the charactersets
+  var newPassword = ''
+  for (let i = 0; i < length; i++) {
+    newPassword = newPassword.concat(
+      characterSet.charAt(Math.floor(Math.random() * characterSet.length))
+    )
+  }
+
   //display to page
-
-  return
+  return newPassword
 }
 
 // Get references to the #generate element
