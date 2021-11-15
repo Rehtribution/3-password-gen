@@ -4,22 +4,24 @@ function generatePassword() {
   //this log will confirm that the button is functional in the dev tools
   console.log("generate click");
 
-//setting the boolian values to false and numeric to allow future input
-  var length = 0
-  var isNumeric = false
-  var isUpper = false
-  var isLower = false
-  var isSpecial = false
+  //setting the boolian values to false and numeric to allow future input
+  var length = parseInt(window.prompt('Choose a passsword length between 8-128'))
 
   //prompt user for pass criteria
   //password 8 < length >128. This while loop will circle around untill a valid number is input.
   while (length < 8 || length > 128 || isNaN(length)) {
+    alert("Length must be a number between 8 and 128.")
     length = parseInt(window.prompt('Choose a passsword length between 8-128'))
   }
 
+  var isNumeric = window.confirm('Include numbers?')
+  var isUpper = window.confirm('Include uppercase?')
+  var isLower = window.confirm('Include lowercase?')
+  var isSpecial = window.confirm('Include special characters?')
 
   //validate selections. this while loop with circle around until at least one selection is made.
   while (!(isNumeric || isUpper || isLower || isSpecial)) {
+    alert("You must choose at least one type of charater")
     isNumeric = window.confirm('Include numbers?')
     isUpper = window.confirm('Include uppercase?')
     isLower = window.confirm('Include lowercase?')
