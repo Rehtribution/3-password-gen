@@ -13,7 +13,7 @@ function generatePassword() {
     alert("Length must be a number between 8 and 128.")
     length = parseInt(window.prompt('Choose a passsword length between 8-128'))
   }
-
+//setting confirmation alerts
   var isNumeric = window.confirm('Include numbers?')
   var isUpper = window.confirm('Include uppercase?')
   var isLower = window.confirm('Include lowercase?')
