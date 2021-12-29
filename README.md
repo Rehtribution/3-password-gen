@@ -29,7 +29,7 @@ This is the third Challenge homework assignment and will meet the acceptance cri
 ![pass-gen](https://user-images.githubusercontent.com/92597876/141696670-8d046e46-bee5-4d46-86b4-16db5d1051b6.JPG)
 
 ## deployed link
-- https://rehtribution.github.io/password-gen/
+- https://rehtribution.github.io/3-password-gen/
 
 
 ## Built With
