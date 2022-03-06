@@ -5,6 +5,7 @@ Password Gen is a random password generator that will assist a user creating a s
 
 
 <h2 align="center">User Story</h2>
+
 ```
 - GIVEN I need a new, secure password
 - WHEN I click the button to generate a password
@@ -40,5 +41,5 @@ Password Gen is a random password generator that will assist a user creating a s
 
 ## Author
 
-- [Portfolio] https://rehtribution.github.io/portfolio/
+[![GitHub Portfolio -> - Rehtribution](https://img.shields.io/badge/GitHub_Portfolio_-->-Rehtribution-darkred?style=for-the-badge)](https://github.com/Rehtribution)
 
