@@ -4,8 +4,8 @@
 Password Gen is a random password generator that will assist a user creating a strong password that provides greater security.
 
 
-This is the third Challenge homework assignment and will meet the acceptance criteria listed below:
-
+<h2 align="center">User Story</h2>
+```
 - GIVEN I need a new, secure password
 - WHEN I click the button to generate a password
 - THEN I am presented with a series of prompts for password criteria
@@ -21,7 +21,7 @@ This is the third Challenge homework assignment and will meet the acceptance cri
 - THEN a password is generated that matches the selected criteria
 - WHEN the password is generated
 - THEN the password is either displayed in an alert or written to the page
-
+```
 
 
 ## Screenshot
